@@ -2,15 +2,15 @@
 
 document.getElementById('generateButton').addEventListener('click', generateDiv);
 
-function generateDiv() {
-    let selectedHeight = document.getElementById('height').value;
+        function generateDiv() {
+            let selectedHeight = document.getElementById('height').value;
 
-    let generatedDiv = document.createElement('div');
-    generatedDiv.style.backgroundColor = 'blue';
-    generatedDiv.style.height = selectedHeight + 'px';
-    generatedDiv.style.width = '30px';
+            let generatedDiv = document.createElement('div');
+            generatedDiv.style.backgroundColor = 'blue';
+            generatedDiv.style.height = selectedHeight + 'px';
+            generatedDiv.style.width = '30px';
 
-    document.getElementById('generatedDiv').appendChild(generatedDiv);
+            document.getElementById('generatedDiv').appendChild(generatedDiv);
 
-    console.log(generatedDiv);
-}
+            console.log(generatedDiv);
+        }
