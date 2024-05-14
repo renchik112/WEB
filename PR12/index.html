@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Практична робота №12 Опар Ірина Ігорівна</h1>
+        <div class="wrapper">
+            <form>
+                <div class="form-block-wrap">
+                    <div class="users-name-wrap">
+                        <label for="username">Ім’я користувача:</label>
+                        <input type="text" name="username" id="username" required />
+                    </div>
+                    <div class="user-email-wrap">
+                        <label for="email">Електронна пошта:</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                </div>
+                <div class="form-block-wrap">
+                    <div class="time-eat-wrap">
+                        <input
+                            type="radio"
+                            name="meal-time"
+                            id="breakfast"
+                            value="сніданок"
+                            required
+                        />
+                        <label for="meal-time">Сніданок</label>
+                    </div>
+                    <div class="time-eat">
+                        <input type="radio" name="meal-time" id="lunch" value="обід" required />
+                        <label for="meal-time">Обід</label>
+                    </div>
+                    <div class="time-eat">
+                        <input type="radio" name="meal-time" id="dinner" value="вечерю" required />
+                        <label for="meal-time">Вечеря</label>
+                    </div>
+                </div>
+                <div class="form-block-wrap">
+                    <div class="food-choose">
+                        <input type="checkbox" name="meal" id="borsch" value="борщ" />
+                        <label for="meal">Борщ</label>
+                    </div>
+                    <div class="food-choose">
+                        <input type="checkbox" name="meal" id="porridge" value="вівсяна каша" />
+                        <label for="meal">Вівсяна каша</label>
+                    </div>
+                    <div class="food-choose">
+                        <input type="checkbox" name="meal" id="pasta" value="паста Болоньєзе" />
+                        <label for="meal">Паста Болоньєзе</label>
+                    </div>
+                    <div class="food-choose">
+                        <input type="checkbox" name="meal" id="pizza" value="піца" />
+                        <label for="meal">Піца</label>
+                    </div>
+                    <div class="food-choose">
+                        <input type="checkbox" name="meal" id="barbecue" value="шашлик" />
+                        <label for="meal">Шашлик</label>
+                    </div>
+                </div>
+                <div class="form-block-wrap">
+                    <textarea name="comment" id="comment" cols="40" rows="4" placeholder="Коментар" required></textarea>
+                </div>
+                <button class="order-send" type="button" id="send-button">Надіслати</button>
+            </form>
+        </div>
+        <div id="output"></div>
+        <script src="skript.js"></script>
+    </body>
+</html>
