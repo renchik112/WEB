@@ -1,0 +1,467 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+
+header {
+	background-color: #87986a;
+}
+
+.header-items {
+	margin: 0 auto;
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.header-left {
+	display: flex;
+	align-items: center;
+}
+
+.header-text {
+	padding: 20px;
+}
+
+.header-title {
+	font-family: "Poetsen One", serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: italic;
+	color: #ffffff;
+	font-size: 50px;
+	padding-bottom: 10px;
+}
+
+.header-subtitle {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	color: #000000;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+}
+
+.header-nav {
+	margin-right: 90px;
+}
+
+.nav-elements {
+	display: flex;
+}
+
+.nav-link {
+	padding: 10px;
+	margin: 0 15px;
+	background-color: #faedcd;
+	color: #000000;
+	transition: 1s;
+	border-radius: 10px;
+}
+
+.nav-link:hover {
+	background-color: #000000;
+	color: #fff;
+	transition: 1s;
+}
+
+.header-telefone {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+.header-number {
+	padding: 10px;
+	margin: 10px;
+	background-color: #faedcd;
+	color: #000000;
+	border-radius: 10px;
+	transition: 1s;
+}
+
+.header-number:hover {
+	background-color: #000000;
+	color: #fff;
+	transition: 1s;
+}
+
+.header-number-text {
+	color: #ffffff;
+	background-color: #283618;
+	padding: 7px;
+	border-radius: 10px;
+	margin: 0 auto 0 10px;
+}
+
+.burger-button {
+	display: none;
+}
+
+@media(max-width: 1200px) {
+	.header-image {
+		max-width: 80px;
+	}
+}
+
+@media(max-width: 992px) {
+	.header-items {
+		margin: 0 50px;
+		max-width: none;
+	}
+
+	.header-image {
+		display: none;
+	}
+
+	.header-text {
+		padding: 10px;
+	}
+
+	.header-title {
+		font-size: 36px;
+	}
+
+	.header-nav {
+		padding-right: 10px;
+	}
+
+	.nav-link {
+		margin: 0 5px;
+	}
+
+	.header-number {
+		padding: 10px;
+		margin: 5px;
+	}
+
+	.header-number-text {
+		padding: 5px;
+		margin-right: 5px;
+	}
+}
+
+@media(max-width: 768px) {
+	.header-items {
+		margin: 0 20px;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	.header-telefone {
+		display: none;
+	}
+
+	.burger-button {
+		width: 34px;
+		height: 16px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+	}
+
+	.burger-button:hover svg path {
+		stroke: #606c38;
+	}
+}
+
+@media(max-width: 576px) {
+	.header-items {
+		margin: 0 10px;
+		padding: 10px 0;
+	}
+
+	.burger {
+		width: 80px;
+		height: 45px;
+	}
+
+	.burger-bun {
+		height: 15px;
+	}
+
+	.burger-filling {
+		height: 8px;
+	}
+}
+
+/* Main */
+
+main {
+	background-color: #b5c99a;
+	border-bottom: solid 2px #b5c99a;
+	border-top: solid 2px #b5c99a;
+}
+
+.main-container {
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 20px;
+}
+
+.main-karusel {
+	margin-bottom: 20px;
+}
+
+.karusel-image {
+	width: 100%;
+	height: auto;
+}
+
+.main-items {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.main-item {
+	height: 200px;
+	position: relative;
+}
+
+.main-item-1 {
+	background-image: url("https://place-hold.it/500x500/333d29/b6ad90/333d29.png&text=Catalog&bold&fontsize=32");
+	background-size: 100%;
+	background-position: center;
+}
+
+.main-item-2 {
+	background-image: url("https://place-hold.it/500x500/333d29/b6ad90/333d29.png&text=Sale&bold&fontsize=32");
+	background-size: 100%;
+	background-position: center;
+}
+
+.item-main-title {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background-color: #9a8c98;
+	opacity: 0.6;
+	padding: 5px 0;
+	text-align: center;
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.main-contact {
+	margin-bottom: 20px;
+	display: none;
+}
+
+.main-number {
+	background-color: #588157;
+	border: solid 2px #dad7cd;
+	border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+	font-size: 20px;
+	display: block;
+	color: #deecc1;
+	margin-bottom: 10px;
+}
+
+.main-number-text {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18px;
+	color: #344e41;
+	font-weight: 700;
+}
+
+@media(max-width: 992px) {
+	.main-items {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.main-item {
+		height: 250px;
+	}
+
+	.main-item-3 {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	.header-nav {
+		margin-left: 20px;
+		margin-right: auto;
+	}
+}
+
+@media(max-width: 768px) {
+	.main-items {
+		grid-template-columns: 1fr;
+	}
+
+	.main-item-3 {
+		grid-column-end: 2;
+	}
+
+	.main-contact {
+		display: block;
+	}
+}
+
+@media(max-width: 576px) {
+	.main-item {
+		height: 200px;
+	}
+}
+
+/* Footer */
+
+footer {
+	background-color: #87986a;
+}
+
+.footer-container {
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 20px 20px 10px 20px;
+}
+
+.footer-items {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: 50px;
+}
+
+.footer-title {
+	margin-bottom: 16px;
+	color: #333d29;
+	font-size: 18px;
+}
+
+.footer-subtitle {
+	color: #333d29;
+}
+
+.footer-text {
+	color: #333d29;
+}
+
+.footer-copyright {
+	text-align: center;
+	color: #333d29;
+}
+
+footer p {
+	padding: 8px 0;
+}
+
+@media(max-width: 768px) {
+	.footer-items {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.footer-item {
+		margin-bottom: 15px;
+		border-bottom: 1px solid #283618;
+	}
+	.footer-item:last-child {
+		border-bottom: none;
+	}
+
+	.footer-title {
+		margin-bottom: 16px;
+		font-size: 18px;
+	}
+
+	.footer-copyright {
+		text-align: center;
+	}
+
+	footer p {
+		padding: 8px 0;
+	}
+}
